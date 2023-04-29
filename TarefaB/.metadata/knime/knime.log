@@ -1,0 +1,59 @@
+2023-04-29 18:10:57,157 : WARN  : main :  : FontStore :  :  : Using the system default font for annotations: Font {140285787473184}
+2023-04-29 18:15:30,394 : WARN  : main :  : Node : Linear Correlation : 3:26 : Auto configuration: Using all suitable columns (in total 18)
+2023-04-29 18:24:49,121 : WARN  : main :  : Node : String Replace (Dictionary) : 3:27 : No settings available
+2023-04-29 18:25:17,050 : WARN  : main :  : Node : String Replacer : 3:28 : Selected column 'null' does not exist in input table
+2023-04-29 18:34:05,852 : ERROR : main :  : RuleEngine2PortsNodeDialog : Rule Engine (Dictionary) : 3:29 : Error loading model settings
+java.lang.NullPointerException: Cannot invoke "org.knime.core.data.DataTableSpec.containsCompatibleType(java.lang.Class)" because "inSpec" is null
+	at org.knime.base.node.rules.engine.twoports.RuleEngine2PortsSimpleSettings.columnNameOrNull(RuleEngine2PortsSimpleSettings.java:156)
+	at org.knime.base.node.rules.engine.twoports.RuleEngine2PortsSimpleSettings.loadSettingsDialog(RuleEngine2PortsSimpleSettings.java:176)
+	at org.knime.base.node.rules.engine.twoports.RuleEngine2PortsSettings.loadSettingsDialog(RuleEngine2PortsSettings.java:500)
+	at org.knime.base.node.rules.engine.twoports.RuleEngine2PortsSimpleNodeDialog.loadSettingsFrom(RuleEngine2PortsSimpleNodeDialog.java:304)
+	at org.knime.base.node.rules.engine.twoports.RuleEngine2PortsNodeDialog.loadSettingsFrom(RuleEngine2PortsNodeDialog.java:361)
+	at org.knime.base.node.rules.engine.twoports.RuleEngine2PortsSimpleNodeDialog.loadSettingsFrom(RuleEngine2PortsSimpleNodeDialog.java:329)
+	at org.knime.core.node.DataAwareNodeDialogPane.callDerivedLoadSettingsFrom(DataAwareNodeDialogPane.java:79)
+	at org.knime.core.node.NodeDialogPane$3.run(NodeDialogPane.java:475)
+	at org.knime.core.node.util.ViewUtils$3.run(ViewUtils.java:353)
+	at org.knime.core.node.util.ViewUtils$2.run(ViewUtils.java:155)
+	at java.desktop/java.awt.event.InvocationEvent.dispatch(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(Unknown Source)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.run(Unknown Source)
+2023-04-29 18:39:29,240 : WARN  : KNIME-Worker-6-String To Number (PMML) 3:29 :  : AbstractStringToNumberNodeModel : String To Number (PMML) : 3:29 : Values in 4772 cells could not be parsed, first error: '01/01/2015 00:00' (RowKey: Row0, Position: 1)
+2023-04-29 18:39:29,240 : WARN  : KNIME-Worker-6-String To Number (PMML) 3:29 :  : Node : String To Number (PMML) : 3:29 : Problems occurred, see Console messages.
+
+2023-04-29 18:39:58,674 : WARN  : KNIME-Worker-7-Linear Correlation 3:26 :  : Node : Linear Correlation : 3:26 : Some numeric column(s) contained missing values: "date(Date&Time)"
+Some numeric column(s) have low variance (are constant): "date(Date&Time)"
+2023-04-29 18:40:13,493 : WARN  : KNIME-Worker-8-Linear Correlation 3:26 :  : Node : Linear Correlation : 3:26 : Some numeric column(s) contained missing values: "date(Date&Time)", "Day of week (name)"
+Some numeric column(s) have low variance (are constant): "date(Date&Time)", "Day of week (name)"
+2023-04-29 18:43:21,652 : ERROR : AWT-EventQueue-0 :  : EditNominalDomainDialog : Edit Nominal Domain : 3:29 : Unable to load the settings into the dialog.
+org.knime.core.node.NotConfigurableException: No data at input.
+	at org.knime.base.node.preproc.domain.editnominal.EditNominalDomainDialog.load(EditNominalDomainDialog.java:225)
+	at org.knime.base.node.preproc.domain.editnominal.EditNominalDomainNodeDialogPane.loadSettingsFrom(EditNominalDomainNodeDialogPane.java:136)
+	at org.knime.core.node.NodeDialogPane.loadSettingsFrom(NodeDialogPane.java:617)
+	at org.knime.core.node.NodeDialogPane.callDerivedLoadSettingsFrom(NodeDialogPane.java:522)
+	at org.knime.core.node.NodeDialogPane$3.run(NodeDialogPane.java:475)
+	at org.knime.core.node.util.ViewUtils$3.run(ViewUtils.java:353)
+	at org.knime.core.node.util.ViewUtils$2.run(ViewUtils.java:155)
+	at java.desktop/java.awt.event.InvocationEvent.dispatch(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(Unknown Source)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.run(Unknown Source)
+2023-04-29 18:43:35,422 : WARN  : main :  : Node : Edit Nominal Domain : 3:29 : Missing Configuration.

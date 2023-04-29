@@ -1,0 +1,121 @@
+
+{
+    "version": "4.7.0.v202212010827",
+    "created": "2023-04-29 18:10",
+    "nodestats": {
+        "nodes": [
+            {
+                "id": "org.knime.base.node.preproc.correlation.compute2.CorrelationCompute2NodeFactory#Linear Correlation",
+                "nrexecs": 8,
+                "nrfails": 0,
+                "exectime": 152,
+                "nrcreated": 1,
+                "successor": "n/a"
+            },
+            {
+                "id": "org.knime.base.node.preproc.normalize3.Normalizer3NodeFactory#Normalizer",
+                "nrexecs": 0,
+                "nrfails": 0,
+                "exectime": 0,
+                "nrcreated": 0,
+                "successor": "org.knime.base.node.preproc.colconvert.categorytonumber2.CategoryToNumberNodeFactory2#Category To Number"
+            },
+            {
+                "id": "org.knime.base.node.preproc.colconvert.stringtonumber2.StringToNumber2NodeFactory#String To Number",
+                "nrexecs": 0,
+                "nrfails": 0,
+                "exectime": 0,
+                "nrcreated": 1,
+                "successor": "n/a"
+            },
+            {
+                "id": "org.knime.base.node.preproc.pmml.stringtonumber3.StringToNumber3NodeFactory#String To Number (PMML)",
+                "nrexecs": 1,
+                "nrfails": 0,
+                "exectime": 40,
+                "nrcreated": 2,
+                "successor": "org.knime.base.node.preproc.correlation.compute2.CorrelationCompute2NodeFactory#Linear Correlation"
+            },
+            {
+                "id": "org.knime.base.node.preproc.autobinner3.AutoBinnerLearnNodeFactory#Auto-Binner",
+                "nrexecs": 0,
+                "nrfails": 0,
+                "exectime": 0,
+                "nrcreated": 1,
+                "successor": "n/a"
+            },
+            {
+                "id": "org.knime.base.node.preproc.stringreplacer.dict.SearchReplaceDictNodeFactory#String Replace (Dictionary)",
+                "nrexecs": 0,
+                "nrfails": 0,
+                "exectime": 0,
+                "nrcreated": 1,
+                "successor": "org.knime.base.node.preproc.stringreplacer.StringReplacerNodeFactory#String Replacer"
+            },
+            {
+                "id": "org.knime.base.node.preproc.stringreplacer.StringReplacerNodeFactory#String Replacer",
+                "nrexecs": 0,
+                "nrfails": 0,
+                "exectime": 0,
+                "nrcreated": 1,
+                "successor": "n/a"
+            },
+            {
+                "id": "org.knime.base.node.preproc.stringmanipulation.StringManipulationNodeFactory#String Manipulation",
+                "nrexecs": 0,
+                "nrfails": 0,
+                "exectime": 0,
+                "nrcreated": 1,
+                "successor": "n/a"
+            },
+            {
+                "id": "org.knime.base.node.rules.engine.RuleEngineNodeFactory#Rule Engine",
+                "nrexecs": 0,
+                "nrfails": 0,
+                "exectime": 0,
+                "nrcreated": 1,
+                "successor": "n/a"
+            },
+            {
+                "id": "org.knime.base.node.rules.engine.twoports.RuleEngine2PortsNodeFactory#Rule Engine (Dictionary)",
+                "nrexecs": 0,
+                "nrfails": 0,
+                "exectime": 0,
+                "nrcreated": 2,
+                "successor": "n/a"
+            },
+            {
+                "id": "org.knime.base.node.preproc.domain.editnominal.EditNominalDomainNodeFactory#Edit Nominal Domain",
+                "nrexecs": 0,
+                "nrfails": 0,
+                "exectime": 0,
+                "nrcreated": 1,
+                "successor": "n/a"
+            },
+            {
+                "id": "org.knime.base.node.preproc.colconvert.categorytonumber2.CategoryToNumberNodeFactory2#Category To Number",
+                "nrexecs": 2,
+                "nrfails": 0,
+                "exectime": 16,
+                "nrcreated": 1,
+                "successor": "org.knime.base.node.preproc.correlation.compute2.CorrelationCompute2NodeFactory#Linear Correlation"
+            }
+        ],
+        "metaNodes": {
+        },
+        "wrappedNodes": {
+        }
+    },
+    "uptime": 2703786,
+    "workflowsOpened": 1,
+    "remoteWorkflowsOpened": 0,
+    "columnarStorageWorkflowsOpened": 0,
+    "workflowsImported": 0,
+    "workflowsExported": 0,
+    "webUIPerspectiveSwitches": 0,
+    "launches": 1,
+    "lastApplicationID": "org.knime.product.KNIME_APPLICATION",
+    "timeSinceLastStart": 2703786,
+    "crashes": 0,
+    "properlyShutDown": true
+}
